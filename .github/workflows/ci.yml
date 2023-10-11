@@ -24,7 +24,12 @@ jobs:
         with:
           node-version: '16'
           cache: yarn
-      - run: yarn && yarn nx run landing:export
+      - name: install deps
+        run: yarn
+      - name: build page
+        run: yarn nx export landing --prod
+      - name: Deploy workaround
+        run: touch ./dist/landing/exported/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
