@@ -73,3 +73,7 @@ npx create-nx-workspace@latest --ci github
 npx tailwindcss init -p
 yarn add -D tailwindcss postcss autoprefixer
 ```
+
+https://tailwindui.com/components/preview
+https://headlessui.com/
+https://heroicons.com/

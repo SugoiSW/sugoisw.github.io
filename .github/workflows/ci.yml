@@ -27,7 +27,7 @@ jobs:
       - name: install deps
         run: yarn
       - name: build page
-        run: yarn nx export landing --prod
+        run: yarn nx run landing:export
       - name: Deploy workaround
         run: touch ./dist/landing/exported/.nojekyll
       - name: Upload artifact

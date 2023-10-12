@@ -1,4 +1,9 @@
-import styles from './page.module.scss';
+import { InitialRow } from './components/InitialRow';
+import { BenefitsGrid } from './components/BenefitsGrid';
+import { ProjectsGrid } from './components/ProjectsGrid';
+import { ContentSection } from './components/ContentSection';
+import { Footer } from './components/Footer';
+import { Nav } from './components/Nav';
 
 export default async function Index() {
   /*
@@ -7,10 +12,13 @@ export default async function Index() {
    * Note: The corresponding styles are in the ./index.scss file.
    */
   return (
-    <div className={styles.page}>
-      <div>
-        <p className="text-xl">hello with tailwindcss</p>
-      </div>
+    <div>
+      <Nav />
+      <InitialRow />
+      <BenefitsGrid />
+      <ProjectsGrid />
+      <ContentSection />
+      <Footer />
     </div>
   );
 }
