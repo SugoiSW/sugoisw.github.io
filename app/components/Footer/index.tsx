@@ -1,8 +1,8 @@
 const links = [
-  { name: 'Open roles', href: '#' },
-  { name: 'Internship program', href: '#' },
-  { name: 'Our values', href: '#' },
-  { name: 'Meet our leadership', href: '#' },
+  { name: 'Servicios', href: '#' },
+  { name: 'Proyectos', href: '#' },
+  { name: 'Historia', href: '#' },
+  { name: 'Contacto', href: '#' },
 ];
 const stats = [
   { name: 'Offices worldwide', value: '12' },
@@ -46,12 +46,11 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Work with us
+            Comencemos a Construir tu Futuro Digital
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            ¿Tienes preguntas o estás listo para empezar? Estamos a un mensaje
+            de distancia. ¡Contáctanos hoy mismo en SugoiSW!
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
@@ -62,7 +61,7 @@ export const Footer = () => {
               </a>
             ))}
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          {/* <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">
@@ -73,7 +72,7 @@ export const Footer = () => {
                 </dd>
               </div>
             ))}
-          </dl>
+          </dl> */}
         </div>
       </div>
     </div>

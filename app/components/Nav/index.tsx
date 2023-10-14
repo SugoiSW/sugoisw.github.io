@@ -5,10 +5,10 @@ import { Dialog } from '@headlessui/react';
 import { AI, Globe } from '../Icons';
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Servicios', href: '#' },
+  { name: 'Proyectos', href: '#' },
+  { name: 'Historia', href: '#' },
+  { name: 'Contacto', href: '#' },
 ];
 
 export const Nav = () => {

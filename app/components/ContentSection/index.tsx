@@ -39,15 +39,16 @@ export const ContentSection = () => {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">
-                Deploy faster
+                Experiencia
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                A better workflow
+                ¿Por qué Elegir a SugoiSW?
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                id at vitae feugiat egestas.
+                Elige a SugoiSW por su experiencia inigualable, soluciones de
+                vanguardia y un compromiso firme para convertir tu visión en
+                realidad. Aportamos innovación, calidad y servicio personalizado
+                a cada proyecto, asegurando tu éxito en el mundo digital.
               </p>
             </div>
           </div>
@@ -62,14 +63,6 @@ export const ContentSection = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
-              </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
                   <CloudArrowUp
@@ -78,11 +71,11 @@ export const ContentSection = () => {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      Push to deploy.
+                      Experiencia.
                     </strong>{' '}
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    Nuestro equipo de ingenieros experimentados se especializa
+                    en crear soluciones de vanguardia, y personalmente me dedico
+                    a garantizar el éxito de tu proyecto.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -92,10 +85,11 @@ export const ContentSection = () => {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      SSL certificates.
+                      Innovación.
                     </strong>{' '}
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
+                    Mantenemos la vanguardia de las tendencias tecnológicas,
+                    utilizando las últimas herramientas y técnicas para entregar
+                    excelencia.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -105,30 +99,50 @@ export const ContentSection = () => {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      Database backups.
+                      Personalización.
                     </strong>{' '}
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    Entendemos que cada proyecto es único. Trabajamos
+                    estrechamente contigo para adaptar las soluciones a tus
+                    objetivos específicos.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <AI
+                    className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong className="font-semibold text-gray-900">
+                      Garantía de Calidad.
+                    </strong>{' '}
+                    Nuestro compromiso con la calidad es inquebrantable.
+                    Probamos y perfeccionamos rigurosamente nuestras soluciones
+                    para cumplir con los más altos estándares.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <AI
+                    className="mt-1 h-5 w-5 flex-none text-indigo-600"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong className="font-semibold text-gray-900">
+                      Satisfacción del Cliente.
+                    </strong>{' '}
+                    Tu éxito es nuestro éxito. Priorizamos la comunicación
+                    abierta y la colaboración para asegurar que tu proyecto
+                    supere tus expectativas.
                   </span>
                 </li>
               </ul>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
-              </p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                No server? No problem.
+                ¿Listo para Convertir tus Ideas en Realidad?
               </h2>
-              <p className="mt-6">
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
+              <p className="mt-6 text-xl leading-8 text-gray-700">
+                Contáctanos hoy para discutir tu proyecto y descubre cómo
+                SugoiSW puede hacerlo realidad. Empecemos juntos en este
+                emocionante viaje y transformemos tus conceptos en soluciones de
+                vanguardia que dejen una huella duradera.
               </p>
             </div>
           </div>

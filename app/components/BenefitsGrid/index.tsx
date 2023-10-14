@@ -2,28 +2,28 @@ import { DevicePhone, Globe, AI, Camera } from '../Icons';
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Desarrollo de Aplicaciones Móviles',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'Nos especializamos en la creación de aplicaciones móviles intuitivas y ricas en funciones para diversas plataformas, dando vida a tus ideas en teléfonos inteligentes y tabletas.',
     icon: DevicePhone,
   },
   {
-    name: 'SSL certificates',
+    name: 'Desarrollo Web',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'Nuestro equipo de desarrollo web diseña y construye sitios web y aplicaciones web atractivos y fáciles de usar que cautivan a tu audiencia en línea.',
     icon: Globe,
   },
   {
-    name: 'Simple queues',
+    name: 'Soluciones de Visión por Computadora',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: AI,
+      'Experimenta el futuro de la inteligencia artificial con nuestras soluciones de visión por computadora. Creamos aplicaciones que pueden reconocer, analizar e interpretar datos visuales, permitiendo casos de uso innovadores.',
+    icon: Camera,
   },
   {
-    name: 'Advanced security',
+    name: 'Soluciones de Inteligencia Artificial',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: Camera,
+      'Aprovecha el poder de la inteligencia artificial con nuestras soluciones de IA. Desarrollamos aplicaciones inteligentes que pueden automatizar tareas, tomar decisiones basadas en datos y ofrecer información valiosa.',
+    icon: AI,
   },
 ];
 
@@ -33,15 +33,16 @@ export const BenefitsGrid = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Deploy faster
+            Servicios
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Innovación. Integración. Impacto.
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+            Potencia tu Viaje Digital con SugoiSW. Desde aplicaciones móviles
+            hasta soluciones web, visión por computadora y IA, transformamos
+            ideas en realidades digitales innovadoras, ayudando a que tu negocio
+            prospere.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

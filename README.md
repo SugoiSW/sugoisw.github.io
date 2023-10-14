@@ -74,6 +74,12 @@ npx tailwindcss init -p
 yarn add -D tailwindcss postcss autoprefixer
 ```
 
+https://www.niceatnoon.nl/?ref=landing.love
 https://tailwindui.com/components/preview
 https://headlessui.com/
 https://heroicons.com/
+https://huemint.com/website-2/#palette=fcf4f8-2c2732-4b7eff-99ccb8
+
+https://medium.com/swiftly-tech/how-to-test-push-notifications-in-xcode-11-4-simulator-44ab5ba0efd5
+https://medium.com/@najera.sean/react-native-white-label-101-163c1967c12a
+https://medium.com/@najera.sean/react-native-white-label-102-aba9c56f385c
