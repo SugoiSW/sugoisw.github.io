@@ -84,7 +84,7 @@ export const InitialRow = () => {
 
               <a
                 href="#"
-                className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
+                className="inline-block rounded-md border border-transparent bg-azul px-8 py-3 text-center font-medium text-white hover:bg-azul-dark"
               >
                 Ver proyectos
               </a>

@@ -83,3 +83,17 @@ https://huemint.com/website-2/#palette=fcf4f8-2c2732-4b7eff-99ccb8
 https://medium.com/swiftly-tech/how-to-test-push-notifications-in-xcode-11-4-simulator-44ab5ba0efd5
 https://medium.com/@najera.sean/react-native-white-label-101-163c1967c12a
 https://medium.com/@najera.sean/react-native-white-label-102-aba9c56f385c
+
+https://codepen.io/mediapipe-preview/pen/oNPKmEy
+https://codepen.io/mediapipe-preview/pen/OJBVQJm
+
+paginas
+
+- padel
+- wedding
+- gasolina app
+- centrales
+- makeup transfer
+- hand tracking
+
+352 - 512
