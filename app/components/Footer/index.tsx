@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ScrollLink } from '../ScrollLink';
 
 const links = [
   { name: 'Servicios', href: '#servicios' },
@@ -73,13 +74,14 @@ export const Footer = () => {
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {links.map((link) => (
-              <Link
+              <ScrollLink
                 key={link.name}
                 href={link.href}
+                scroll={true}
                 className="px-3 py-2 hover:bg-azul-light text-center rounded-md border border-transparent"
               >
                 {link.name} <span aria-hidden="true">&rarr;</span>
-              </Link>
+              </ScrollLink>
             ))}
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
@@ -87,6 +89,7 @@ export const Footer = () => {
               <Link
                 key={stat.name}
                 href={stat.href}
+                scroll={true}
                 className="flex flex-col hover:underline text-white"
               >
                 <dt className="text-3xl leading-7 text-gray-300">
