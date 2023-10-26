@@ -37,7 +37,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://sugoisw.github.io/img/centrales.webp"
+          content="https://sugoisw.github.io/img/logo.webp"
         />
         <meta property="og:url" content="https://sugoisw.github.io/" />
       </Head>
