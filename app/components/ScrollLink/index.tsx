@@ -1,4 +1,5 @@
 'use client';
+import mixpanel from 'mixpanel-browser';
 import Link, { LinkProps } from 'next/link';
 import React, { PropsWithChildren, useCallback } from 'react';
 
@@ -30,6 +31,7 @@ export const ScrollLink = ({ children, ...props }: ScrollLinkProps) => {
       elem?.scrollIntoView({
         behavior: 'smooth',
       });
+      mixpanel.track(`Click ${(e.target as any).innerText || 'link'}`);
     },
     [props.onClick]
   );

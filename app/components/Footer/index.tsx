@@ -1,5 +1,7 @@
+'use client';
 import Link from 'next/link';
 import { ScrollLink } from '../ScrollLink';
+import mixpanel from 'mixpanel-browser';
 
 const links = [
   { name: 'Servicios', href: '#servicios' },
@@ -9,7 +11,7 @@ const links = [
 ];
 const stats = [
   {
-    name: 'SugoiSQ',
+    name: 'SugoiSW',
     value: 'Monclova, COA',
     href: 'https://maps.app.goo.gl/Lg6rXx9QEgWrwr1J9',
   },
@@ -90,6 +92,14 @@ export const Footer = () => {
                 key={stat.name}
                 href={stat.href}
                 scroll={true}
+                target="_blank"
+                onClick={() => {
+                  mixpanel.track(`Click contact`, {
+                    href: stat.href,
+                    value: stat.value,
+                    name: stat.name,
+                  });
+                }}
                 className="flex flex-col hover:underline text-white"
               >
                 <dt className="text-3xl leading-7 text-gray-300">
