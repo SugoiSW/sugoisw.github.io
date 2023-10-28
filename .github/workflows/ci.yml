@@ -31,7 +31,7 @@ jobs:
           NEXT_PUBLIC_MIXPANEL: ${{ secrets.NEXT_PUBLIC_MIXPANEL }}
         run: |
           touch .env
-          echo "NEXT_PUBLIC_MIXPANEL=${NEXT_PUBLIC_MIXPANEL}" >> .env
+          echo "NEXT_PUBLIC_MIXPANEL=${NEXT_PUBLIC_MIXPANEL}\n" >> .env
       - name: build page
         run: yarn nx run landing:export
       - name: Deploy workaround
@@ -40,6 +40,10 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist/landing/exported
+      - name: Upload env
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: .env
 
   deploy:
     runs-on: ubuntu-latest
