@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_MIXPANEL: ${{ env.NEXT_PUBLIC_MIXPANEL }}
+      NEXT_PUBLIC_MIXPANEL: ${{ secrets.NEXT_PUBLIC_MIXPANEL }}
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
@@ -33,7 +33,7 @@ jobs:
           touch .env.production
           echo NEXT_PUBLIC_MIXPANEL=$NEXT_PUBLIC_MIXPANEL >> .env.production
           cat .env.production
-          yarn nx run landing:export
+          NEXT_PUBLIC_MIXPANEL=$NEXT_PUBLIC_MIXPANEL yarn nx run landing:export
       - name: Deploy workaround
         run: touch ./dist/landing/exported/.nojekyll
       - name: Upload artifact
