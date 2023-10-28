@@ -8,14 +8,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // useEffect(() => {
-  //   // Initialize Mixpanel with your API token
-  //   mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL || '', {
-  //     debug: true,
-  //     track_pageview: true,
-  //     persistence: 'localStorage',
-  //   });
-  // }, []);
+  useEffect(() => {
+    // Initialize Mixpanel with your API token
+    mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL || '', {
+      track_pageview: true,
+      persistence: 'localStorage',
+    });
+  }, []);
   return (
     <html lang="en">
       <body>{children}</body>
