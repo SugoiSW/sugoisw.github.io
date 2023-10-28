@@ -17,6 +17,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_MIXPANEL: ${{ secrets.NEXT_PUBLIC_MIXPANEL }}
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
@@ -29,7 +31,7 @@ jobs:
       - name: build page
         run: |
           touch .env.local
-          echo NEXT_PUBLIC_MIXPANEL=${{ secrets.NEXT_PUBLIC_MIXPANEL }} >> .env.local
+          echo NEXT_PUBLIC_MIXPANEL=$NEXT_PUBLIC_MIXPANEL >> .env.local
           cat .env.local
           yarn nx run landing:export
       - name: Deploy workaround
