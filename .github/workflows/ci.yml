@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_MIXPANEL: ${{ secrets.NEXT_PUBLIC_MIXPANEL }}
+      NEXT_PUBLIC_MIXPANEL: ${{ env.NEXT_PUBLIC_MIXPANEL }}
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
@@ -40,10 +40,6 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist/landing/exported
-      - name: Upload ev
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: .env.production
 
   deploy:
     runs-on: ubuntu-latest
