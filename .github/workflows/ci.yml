@@ -26,24 +26,17 @@ jobs:
           cache: yarn
       - name: install deps
         run: yarn
-      - name: add envs
-        env:
-          NEXT_PUBLIC_MIXPANEL: ${{ secrets.NEXT_PUBLIC_MIXPANEL }}
-        run: |
-          touch .env
-          echo "NEXT_PUBLIC_MIXPANEL=${NEXT_PUBLIC_MIXPANEL}\n" >> .env
       - name: build page
-        run: yarn nx run landing:export
+        run: |
+          touch .env.local
+          echo NEXT_PUBLIC_MIXPANEL=${{ secrets.NEXT_PUBLIC_MIXPANEL }} >> .env
+          yarn nx run landing:export
       - name: Deploy workaround
         run: touch ./dist/landing/exported/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist/landing/exported
-      - name: Upload env
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: .env
 
   deploy:
     runs-on: ubuntu-latest
