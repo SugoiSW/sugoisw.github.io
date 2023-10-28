@@ -26,6 +26,12 @@ jobs:
           cache: yarn
       - name: install deps
         run: yarn
+      - name: add envs
+        env:
+          NEXT_PUBLIC_MIXPANEL: ${{ secrets.NEXT_PUBLIC_MIXPANEL }}
+        run: |
+          touch .env
+          echo "NEXT_PUBLIC_MIXPANEL=${NEXT_PUBLIC_MIXPANEL}" >> .env
       - name: build page
         run: yarn nx run landing:export
       - name: Deploy workaround
