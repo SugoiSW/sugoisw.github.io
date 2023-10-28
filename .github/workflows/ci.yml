@@ -29,7 +29,8 @@ jobs:
       - name: build page
         run: |
           touch .env.local
-          echo NEXT_PUBLIC_MIXPANEL=${{ secrets.NEXT_PUBLIC_MIXPANEL }} >> .env
+          echo NEXT_PUBLIC_MIXPANEL=${{ secrets.NEXT_PUBLIC_MIXPANEL }} >> .env.local
+          cat .env.local
           yarn nx run landing:export
       - name: Deploy workaround
         run: touch ./dist/landing/exported/.nojekyll
