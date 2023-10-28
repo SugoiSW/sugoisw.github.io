@@ -30,10 +30,8 @@ jobs:
         run: yarn
       - name: build page
         run: |
-          touch .env.production
-          echo NEXT_PUBLIC_MIXPANEL=$NEXT_PUBLIC_MIXPANEL >> .env.production
-          cat .env.production
-          NEXT_PUBLIC_MIXPANEL=$NEXT_PUBLIC_MIXPANEL yarn nx run landing:export
+          sed -i -e "s/{NEXT_PUBLIC_MIXPANEL}/${NEXT_PUBLIC_MIXPANEL}/"  ./next.config.js
+          yarn nx run landing:export
       - name: Deploy workaround
         run: touch ./dist/landing/exported/.nojekyll
       - name: Upload artifact
