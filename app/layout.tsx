@@ -10,7 +10,6 @@ export default function RootLayout({
 }) {
   useEffect(() => {
     // Initialize Mixpanel with your API token
-    console.log(process.env.NEXT_PUBLIC_MIXPANEL);
     mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL || '', {
       track_pageview: true,
       persistence: 'localStorage',
